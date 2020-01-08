@@ -5,8 +5,8 @@ This project presents a video lecture augmentation system leveraging community q
 1. Video Lecture Segmentation: Video lectures are segregated by identifying the topical shifts using a word embedding-based technique.
 2. Concept Extraction: The segmented video lectures are indexed using its concepts, extracted with an entity annotation service.
 3. Off-Topic Identification: The task of predicting off-topic concepts is implemented as a community structure analysis problem on concept similarity graphs.
-4. Concept Classification: The off-topics are further classified using a unsupervised model.
-5. Retrieval of relevant QA pairs: For each off-topic concept which needs augmentation, appropriate QA pairs are fetched.
+4. Retrieval of relevant QA pairs: For each off-topic concept which needs augmentation, appropriate QA pairs are fetched.
+5. Categorization of retrieved QA pairs: For each off-topic concept which needs augmentation, appropriate QA pairs are fetched.
 
 # Steps:
 ## 1. Data collection:
@@ -25,11 +25,9 @@ C. Outlinks for the extracted Wikipedia articles are extracted to generate the c
 D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '5_Annotated' folder in JSON format. Download '5_Annotated' folder from https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 .
 ## 5. Off-topic Identification:
 The off-topics are identified automatically. The code '4_off_predict.py' identifies the off-topics, stores them in '5_off' folder and also evaluates the concerned modules.
-## 5. Concept Classification:
-The off-topics are further diagnosed to determine focus and depth for its 'need for augmentation'. The code '5_concept_classify.py' identifies the focus and depth if an off-topic needed augmentation.
 ## 6. Retrieval of Relevant Video Segments:
 Video lecture segments relevant to each of the off-topics are retrieved. The code '6_retrieval.py' retrieves the segments and stores in '6_Retrieved' folder in JSON format and as 'RT.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format. The '8_Result' folder is downloadable from https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT which contains the folder 'trec-eval', providing the performance evaluation codes.
-## 7. Reranking:
+## 7. Categorization of Retrieved QA Pairs:
 A. Code '7_feature.py' extracts the features and stores them in 'rerank.txt' file under '7_Reranked' folder.
 
 B. The extracted features are combined with the the labels (relevant or not) from 'GS.txt' by code '7_L2R.py' and stores in 'L2R.txt'. Running linear regression models, the code '7_L2R.py' further detemines the weights for the features.
