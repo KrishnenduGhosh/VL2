@@ -30,3 +30,36 @@ Finally, run 'main.py' which offers a menu-based control to execute each of the 
 
 # Contacts
 In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
+
+# Cite
+If this work is helpful for your research, please cite our paper 'Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments' available at https://link.springer.com/article/10.1007/s40593-021-00257-z.
+
+    @article{ghosh2021augmenting,
+        title = "Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments",
+        journal = "International Journal of Artificial Intelligence in Education",
+        year = "2021",
+        doi = "https://doi.org/10.1007/s40593-021-00257-z",
+        url = "https://link.springer.com/article/10.1007/s40593-021-00257-z",
+        author = "Krishnendu Ghosh, Sharmila Reddy Nangi, Yashasvi Kanchugantla, Pavan Gopal Rayapati, Plaban Kumar Bhowmick and Pawan Goyal ",
+        keywords = "Video lecture augmentation, Off-topic concept identification, MOOCs, Concept similarity, Community detection, Retrieval and re-ranking"
+    }
+
+The module on retrieving questions is discussed in details in our paper 'Using Re-Ranking to Boost Deep Learning Based Community Question Retrieval' available at https://link.springer.com/article/10.1007/s40593-021-00257-z.
+
+    @inproceedings{ghosh2017using,
+    author = {Ghosh, Krishnendu and Bhowmick, Plaban Kumar and Goyal, Pawan},
+    title = {Using Re-Ranking to Boost Deep Learning Based Community Question Retrieval},
+    year = {2017},
+    isbn = {9781450349512},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3106426.3106442},
+    doi = {10.1145/3106426.3106442},
+    booktitle = {Proceedings of the International Conference on Web Intelligence},
+    pages = {807–814},
+    numpages = {8},
+    keywords = {question retrieval, re-ranking, community question answering},
+    location = {Leipzig, Germany},
+    series = {WI '17}
+    }
+
