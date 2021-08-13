@@ -1,4 +1,4 @@
-# Video Lecture Augmentation using CQA
+# Augmentating Video Lectures using CQA
 
 # Introduction:
 This project presents a video lecture augmentation system leveraging community question-answer (CQA) forums. Question-answer (QA) pairs, relevant to the course-relevant concepts, are retrieved to cater better insight to the learners. The proposed augmentation model comprises four modules: Concept extraction, Course-relevant concept identification, Retrieving augmentations (QA pairs) and Categorizing augmentations.
