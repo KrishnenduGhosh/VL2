@@ -44,7 +44,7 @@ If this work is helpful for your research, please cite our paper 'Augmenting Vid
         keywords = "Video lecture augmentation, Off-topic concept identification, MOOCs, Concept similarity, Community detection, Retrieval and re-ranking"
     }
 
-The module on retrieving questions is discussed in details in our paper 'Using Re-Ranking to Boost Deep Learning Based Community Question Retrieval' available at https://link.springer.com/article/10.1007/s40593-021-00257-z.
+The module on retrieving questions is discussed in details in our paper 'Using Re-Ranking to Boost Deep Learning Based Community Question Retrieval' available at https://dl.acm.org/doi/pdf/10.1145/3106426.3106442.
 
     @inproceedings{ghosh2017using,
     author = {Ghosh, Krishnendu and Bhowmick, Plaban Kumar and Goyal, Pawan},
