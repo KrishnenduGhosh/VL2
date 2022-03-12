@@ -13,13 +13,19 @@ Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Co
 ## 2. Preprocessing:
 Transcripts (PDFs) are converted into TXT format and pre-processed by removing spurious data (course metadata). The code '1_preprocess.py' converts and preprocesses the data from folder '1_Data' and stores in '2_Text' folder.
 ## 3. Concept Extraction:
-Topics are extracted for each video lecture segments. The code '3_tag.py' extracts the topics and stores in '4_Topic' folder in JSON format.
-## 4. Retrieving augmentations:
-Video lecture segments relevant to each of the off-topics are retrieved. The code '6_retrieval.py' retrieves the segments and stores in '6_Retrieved' folder in JSON format and as 'RT.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format. The '8_Result' folder is downloadable from https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT which contains the folder 'trec-eval', providing the performance evaluation codes.
+A. Topics are extracted for each video lecture segments. The code '3_tag.py' extracts the topics and stores in '4_Topic' folder in JSON format.
+
+B. Wikipedia articles are fetched for the extracted topics. The code '4_topic_out.py' extracts the articles and stores in '5_Topic_pkl' folder in Pickle format.
+
+C. Outlinks for the extracted Wikipedia articles are extracted to generate the concept-graph. The code '5_course_out.py' extracts the backlinks and stores in '6_Course_pkl' folder in Pickle format.
+
+D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '4_Annotated' folder in JSON format. Download '4_Annotated' folder from https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 .
+## 4. Course-relevant topic Identification:
+The course-relevant topics are identified automatically. The code '6_course_predict.py' identifies the course-relevant topics, stores them in '7_course' folder and also evaluates the concerned modules.
+## 5. Retrieving augmentations:
+QA pairs relevant to each of the course-relevant topics are retrieved. The code '7_retrieval.py' retrieves the QA pairs and stores in '8_Retrieved' folder in JSON format and the associated evaluation as 'RT.txt' inside '8_Result/trec-eval/test' folder in TREC suggested text format. The retrieved QA pairs are shown to the annotators and their relevance are tagged. The gold standard is present as 'GS1.txt' file inside '8_Result/trec-eval/test' folder. This '8_Result' folder is downloadable from https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT which contains the folder 'trec-eval', providing the performance evaluation codes.
 ## 6. Categorizing augmentations:
-The retrieved video lecture segments are reranked using code '7_rerank.py' where the learned weights are used. The reranked segments are stored in '7_Reranked' folder in JSON format and as 'RR.txt' in '8_Retrieved/trec-eval/test' folder in TREC suggested text format.
-## 7. Evaluation:
-A. The retrieved and reranked segmnets are shown to the annotators and their relevance are tagged. The gold standard is present in 'GS.txt' file. The file can be downloaded from https://drive.google.com/open?id=1sKfmBveCkUtaL_5cJqKG0li_z-c0wns4 . The code '8_eval.py' evaluates the retrieval and re-ranking performance. The '8_Result' folder is downloadable from https://drive.google.com/open?id=17-IxebyTtNsSXY98FfkTJWHK9goHhkOT which contains the folder 'trec-eval', providing the performance evaluation codes.
+The retrieved QA pairs are categorized using code '8_categorize.py' and stored in '9_Categorization' folder. These categorized QA pairs are again shown to the annotators and the associated gold-standard file 'GS2.txt' is stored inside '8_Result/trec-eval/test' folder. '8_categorize.py' also does the evaluate the categorization performance of the cocnerned module.
 
 # Run:
 ## Prepare the pre-requisites:
