@@ -37,7 +37,7 @@ B. Geckodriver is also required. Download this from [https://drive.google.com/op
 Finally, run 'main.py' which offers a menu-based control to execute each of the above-mentioned modules.
 
 # Contacts
-In case of any queries, you can reach us at kghosh.cs@iitkgp.ac.in
+In case of any queries, you can reach us at krishnendu@iiitdwd.ac.in
 
 # Cite
 If this work is helpful for your research, please cite our paper 'Augmenting Video Lectures: Identifying Off-topic Concepts and Linking to Relevant Video Lecture Segments' available at https://link.springer.com/article/10.1007/s40593-021-00257-z.
