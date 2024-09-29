@@ -19,7 +19,7 @@ B. Wikipedia articles are fetched for the extracted topics. The code '4_topic_ou
 
 C. Outlinks for the extracted Wikipedia articles are extracted to generate the concept-graph. The code '5_course_out.py' extracts the backlinks and stores in '6_Course_pkl' folder in Pickle format.
 
-D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '4_Annotated' folder in JSON format. Download '4_Annotated' folder [from https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3](https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 .).
+D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '4_Annotated' folder in JSON format.
 ## 4. Course-relevant topic Identification:
 The course-relevant topics are identified automatically. The code '6_course_predict.py' identifies the course-relevant topics, stores them in '7_course' folder and also evaluates the concerned modules.
 ## 5. Retrieving augmentations:
