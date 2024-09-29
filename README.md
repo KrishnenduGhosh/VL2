@@ -34,7 +34,7 @@ A. One needs a ist of supporting files to be present in the current directory. O
 B. Geckodriver is also required. Download this from [https://drive.google.com/open?id=1Mf92NT_MNV-z2ZXVkkuneIGw7hLoe8n1](https://drive.google.com/file/d/1Rdkq4OSDVSJG2aekY1_8OVBFs9hF2A3L/view?usp=sharing) and export it in PATH before running the codes.
 
 ## Execute:
-Finally, run 'main.py' which offers a menu-based control to execute each of the above-mentioned modules.
+Run the codes one after another as prescribed in the Steps section.
 
 # Contacts
 In case of any queries, you can reach us at krishnendu@iiitdwd.ac.in
