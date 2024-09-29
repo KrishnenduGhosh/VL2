@@ -9,7 +9,7 @@ This project presents a video lecture augmentation system leveraging community q
 
 # Steps:
 ## 1. Data collection:
-Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively) collected from https://nptel.ac.in/course.html. These data are collected and stored in 1_Data folder in PDF format. Further details of the data is provided in 'Data.md' file. You can download the data from https://drive.google.com/open?id=1KTWhbPk-N8_rz-p-wSIMo9nKKYWU7PU9
+Transcript data for 2581 Lectures present in 68 Courses (39 and 19 related to Computer science and Mathematics domains, respectively) collected from https://nptel.ac.in/course.html. These data are collected and stored in 1_Data folder in PDF format. Further details of the data is provided in 'Data.md' file. You can download the data from [https://drive.google.com/open?id=1KTWhbPk-N8_rz-p-wSIMo9nKKYWU7PU9](https://drive.google.com/open?id=1KTWhbPk-N8_rz-p-wSIMo9nKKYWU7PU9)
 ## 2. Preprocessing:
 Transcripts (PDFs) are converted into TXT format and pre-processed by removing spurious data (course metadata). The code '1_preprocess.py' converts and preprocesses the data from folder '1_Data' and stores in '2_Text' folder.
 ## 3. Concept Extraction:
@@ -19,7 +19,7 @@ B. Wikipedia articles are fetched for the extracted topics. The code '4_topic_ou
 
 C. Outlinks for the extracted Wikipedia articles are extracted to generate the concept-graph. The code '5_course_out.py' extracts the backlinks and stores in '6_Course_pkl' folder in Pickle format.
 
-D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '4_Annotated' folder in JSON format. Download '4_Annotated' folder from https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 .
+D. The concepts from '4_Topic' folder is shown to the annotators and the annotated concepts arestored in the '4_Annotated' folder in JSON format. Download '4_Annotated' folder [from https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3](https://drive.google.com/open?id=1peCDKd2u1xUuez5waN-2OgFRaSvUelh3 .).
 ## 4. Course-relevant topic Identification:
 The course-relevant topics are identified automatically. The code '6_course_predict.py' identifies the course-relevant topics, stores them in '7_course' folder and also evaluates the concerned modules.
 ## 5. Retrieving augmentations:
@@ -29,7 +29,7 @@ The retrieved QA pairs are categorized using code '8_categorize.py' and stored i
 
 # Run:
 ## Prepare the pre-requisites:
-A. One needs a ist of supporting files to be present in the current directory. One can download these files (as recipients of 'lib' folder) from https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I
+A. One needs a ist of supporting files to be present in the current directory. One can download these files (as recipients of 'lib' folder) from [https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I](https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I)
 
 ## Execute:
 Finally, run 'main.py' which offers a menu-based control to execute each of the above-mentioned modules.
