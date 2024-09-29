@@ -29,7 +29,9 @@ The retrieved QA pairs are categorized using code '8_categorize.py' and stored i
 
 # Run:
 ## Prepare the pre-requisites:
-A. One needs a ist of supporting files to be present in the current directory. One can download these files (as recipients of 'lib' folder) from [https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I](https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I)
+A. One needs a ist of supporting files to be present in the current directory. One can download these files (as recipients of 'lib' folder) from [https://drive.google.com/open?id=11PJ0Y-3RavS2F0B8lj247M5pK19fK11I](https://drive.google.com/drive/folders/144lSB61RGqfjuuSTMz3ir7spOUrLgRiY?usp=sharing)
+
+B. Geckodriver is also required. Download this from [https://drive.google.com/open?id=1Mf92NT_MNV-z2ZXVkkuneIGw7hLoe8n1](https://drive.google.com/file/d/1Rdkq4OSDVSJG2aekY1_8OVBFs9hF2A3L/view?usp=sharing) and export it in PATH before running the codes.
 
 ## Execute:
 Finally, run 'main.py' which offers a menu-based control to execute each of the above-mentioned modules.
